@@ -47,10 +47,10 @@ YaddaUtil = {
     }     
 }
 
-Steps = function(options) {
+Steps = function(options, existing_steps) {
 
     this.options = options ? options : {};
-    this.steps = {};
+    this.steps = existing_steps ? existing_steps : {};
 
     this.importSteps = function(steps) {
 
